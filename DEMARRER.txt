@@ -1,0 +1,44 @@
+═══════════════════════════════════════════════════
+       BOT DISCORD — GUIDE DE DÉMARRAGE
+═══════════════════════════════════════════════════
+
+✅ TOUT EST INCLUS — node_modules déjà installés
+
+─── COMMANDE DE DÉMARRAGE ──────────────────────────
+  node --experimental-sqlite src/index.js
+
+─── SUR PTERODACTYL ────────────────────────────────
+  Startup Command :
+    node --experimental-sqlite src/index.js
+
+  Node.js requis : VERSION 24 ou supérieure
+
+─── VARIABLES D'ENVIRONNEMENT ──────────────────────
+  Le fichier .env est déjà configuré avec ton token.
+  Tu peux aussi les définir dans le panneau Pterodactyl :
+    DISCORD_TOKEN      = (déjà rempli dans .env)
+    DISCORD_CLIENT_ID  = (déjà rempli dans .env)
+    GUILD_ID           = TON_ID_SERVEUR (optionnel)
+
+─── DÉPLOYER LES COMMANDES SLASH ───────────────────
+  Les commandes sont déjà déployées globalement.
+  Si tu veux les déployer sur un serveur spécifique
+  (instantané) :
+    GUILD_ID=TON_ID node --experimental-sqlite src/deploy-commands.js
+
+─── COMMANDES DISPONIBLES ──────────────────────────
+  /help              → Voir toutes les commandes
+  /config view       → Voir la configuration
+  /config logs       → Définir salon de logs
+  /config welcome    → Message de bienvenue
+  /config autorole   → Rôle auto à l'arrivée
+  /config antispam   → Anti-spam on/off
+  /config antilinks  → Anti-liens on/off
+  /config badwords   → Mots interdits
+  /antinuke          → Configurer l'anti-nuke
+  /ban /kick /mute /unmute /warn /warns /clearwarns /clear
+  /snipe @user       → Dernier message supprimé
+  /ticket-panel      → Créer un panel de tickets
+  /rank /leaderboard → Système de niveaux XP
+
+═══════════════════════════════════════════════════
